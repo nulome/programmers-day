@@ -15,27 +15,34 @@ public class Praktikum {
         }
     }
 
+
+
     public static boolean isLeapYear(int year) {
-        while (year <= 0) {  // первая проверка на кратность 400
-            if (year == 0) {
+        int x = year;
+        int y = year;
+        int z = year;
+
+        while (x >= 0) {  // первая проверка на кратность 400
+            if (x== 0) {
                 return true;
             }
-            year = year - 400;
+            x = x - 400;
         }
 
-        while (year <= 0) {  // вторая проверка на кратность 100
-            if (year == 0) {
+        while (y >= 0) {  // вторая проверка на кратность 100
+            if (y == 0) {
                 return false;
             }
-            year = year - 100;
+            y = y - 100;
         }
 
-        while (year <= 0) {  // третья проверка на кратность 4
-            if (year == 0) {
+        while (z >= 0) {  // третья проверка на кратность 4
+            if (z == 0) {
                 return true;
             }
-            year = year - 4;
+            z = z - 4;
         }
         return false;
     }
+
 }
