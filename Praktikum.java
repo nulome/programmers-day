@@ -16,14 +16,13 @@ public class Praktikum {
     }
 
 
-
     public static boolean isLeapYear(int year) {
         int x = year;
         int y = year;
         int z = year;
 
         while (x >= 0) {  // первая проверка на кратность 400
-            if (x== 0) {
+            if (x == 0) {
                 return true;
             }
             x = x - 400;
