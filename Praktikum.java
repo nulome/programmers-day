@@ -8,10 +8,12 @@ public class Praktikum {
         int year = scanner.nextInt();
 
         if (isLeapYear(year)) {         // вывод решения по значению true/false
-            System.out.println("Укзаанный год " + year + " будет високосный");
+            // System.out.println("Укзаанный год " + year + " будет високосный");
+            System.out.println("вывод: 12.09." + year);
 
         } else {
-            System.out.println("Укзаанный год " + year + " будет не високосный");
+           //  System.out.println("Укзаанный год " + year + " будет не високосный");
+            System.out.println("вывод: 13.09." + year);
         }
     }
 
